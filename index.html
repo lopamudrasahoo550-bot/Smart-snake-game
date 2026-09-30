@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Snake</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================= -->
+    <!-- DECORATIVE COLORFUL SNAKES -->
+    <!-- ========================= -->
+
+    <div class="decor-snake snake-green">
+        🐍
+    </div>
+
+    <div class="decor-snake snake-blue">
+        🐍
+    </div>
+
+    <div class="decor-snake snake-purple">
+        🐍
+    </div>
+
+    <div class="decor-snake snake-pink">
+        🐍
+    </div>
+
+    <div class="decor-snake snake-orange">
+        🐍
+    </div>
+
+    <div class="decor-snake snake-yellow">
+        🐍
+    </div>
+
+    <div class="decor-snake snake-cyan">
+        🐍
+    </div>
+
+    <div class="decor-snake snake-red">
+        🐍
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- MAIN PAGE -->
+    <!-- ========================= -->
+
+    <div class="game-page">
+
+
+        <!-- HEADER -->
+
+        <header class="top-header">
+
+            <div class="logo">
+
+                <span>🐍</span>
+
+                <span>SMART SNAKE</span>
+
+            </div>
+
+            <p>
+                Classic Snake Adventure
+            </p>
+
+        </header>
+
+
+
+        <!-- MAIN GAME AREA -->
+
+        <main class="main-area">
+
+
+            <!-- GAME BOARD -->
+
+            <section class="game-board-container">
+
+                <div class="board-top">
+
+                    <span>
+                        🐍 SMART SNAKE ARENA
+                    </span>
+
+                    <span
+                        id="gameStatus"
+                        class="game-status">
+
+                        ● READY
+
+                    </span>
+
+                </div>
+
+
+                <canvas
+                    id="gameCanvas"
+                    width="600"
+                    height="600">
+                </canvas>
+
+            </section>
+
+
+
+            <!-- RIGHT SIDE -->
+
+            <aside class="control-panel">
+
+
+                <!-- SCORE -->
+
+                <div class="score-container">
+
+
+                    <div class="score-box">
+
+                        <span>
+                            🏆 HIGH SCORE
+                        </span>
+
+                        <strong id="highScore">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="score-box current-score">
+
+                        <span>
+                            ⭐ SCORE
+                        </span>
+
+                        <strong id="score">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- CONTROLS -->
+
+                <h2 class="controls-title">
+                    CONTROLS
+                </h2>
+
+
+                <div class="direction-controls">
+
+
+                    <button
+                        class="direction up"
+                        id="upBtn">
+
+                        ▲
+
+                    </button>
+
+
+                    <div class="middle-controls">
+
+
+                        <button
+                            class="direction left"
+                            id="leftBtn">
+
+                            ◀
+
+                        </button>
+
+
+                        <button
+                            class="direction down"
+                            id="downBtn">
+
+                            ▼
+
+                        </button>
+
+
+                        <button
+                            class="direction right"
+                            id="rightBtn">
+
+                            ▶
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+                <p class="control-help">
+
+                    Use arrow keys or buttons<br>
+                    to move the snake
+
+                </p>
+
+
+
+                <!-- BUTTONS -->
+
+                <div class="game-buttons">
+
+
+                    <button
+                        id="startBtn"
+                        class="game-button start-button">
+
+                        ▶ Start Game
+
+                    </button>
+
+
+                    <button
+                        id="restartBtn"
+                        class="game-button restart-button">
+
+                        ↻ Restart
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- MESSAGE -->
+
+                <div class="message-box">
+
+                    <p id="message">
+
+                        Press Start Game<br>
+                        to begin!
+
+                    </p>
+
+                </div>
+
+
+            </aside>
+
+
+        </main>
+
+
+
+        <!-- FOOTER -->
+
+        <footer class="bottom-bar">
+
+            <div>
+                🐍 Smart Snake
+            </div>
+
+            <div>
+                ⌨️ Keyboard Control
+            </div>
+
+            <div>
+                ✋ Gesture Control
+            </div>
+
+            <div>
+                🏆 High Score
+            </div>
+
+        </footer>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
